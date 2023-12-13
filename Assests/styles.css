@@ -217,3 +217,22 @@ header ul li a {
 .emailAlt {
     display: none;
 }
+
+@media screen and (max-width: 700px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .myIcon{
+        position:static;
+    }
+    .headshot{
+        left: 50%;
+        margin-left: -10em;
+    }
+}
