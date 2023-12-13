@@ -1,0 +1,95 @@
+
+
+body {
+    background-color: #B6CECA;
+}
+
+/*Header styles*/
+header {
+    height: 200px;
+    background-color: #8AB9AD;
+    display: flex;
+    border-bottom: 4px solid black;
+    justify-content: center;
+}
+
+
+
+header ul {
+    float: right;
+    position: absolute;
+    right: 10px;
+}
+
+header ul li {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 100px;
+    margin: 20px;
+    font-size: 30px;
+    padding: 20px 20px;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*About me section styling*/
+#about-me {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me h2 {
+    font-size: 50px;
+}
+
+#about-me div {
+    position: relative;
+    top: 30%;
+}
+
+#about-me p {
+    margin: 20px;
+}
+
+/*Work gallery styling*/
+#work {
+    background-color: #2B574F;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 8px solid rgb(36, 63, 69);
+    border-bottom: 8px solid rgb(36, 63, 69);
+}
+
+#work h2 {
+    font-size: 50px;
+    color: white;
+    margin: 40px;
+}
+
+/*Contact section styling */
+#contact {
+    background-color: #B6CECA;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#contact h2 {
+    margin: 20px;
+    font-size: 50px;
+    color: white;
+}
