@@ -62,7 +62,29 @@ header ul li a {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+/*hero styling */
+.hero {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
 
+.hero-div {
+    height: 50vh;
+    border-bottom: 4px solid black;
+}
+
+.headshot {
+    border-radius: 100%;
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border: 0.5em solid white;
+    position: relative;
+    z-index: 1;
+    bottom: 200px;
+    left: 100px;
+}
 
 /*About me section styling*/
 #about-me {
