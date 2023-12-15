@@ -1,15 +1,25 @@
+:root{
+    --lightGreen: #B6CECA;
+    --darkGreen: #2B574F;
+    --midGreen: #8AB9AD;
+    --htmlRed: #D83F31;
+    --CSSBlue: #3876BF;
+    --JSYellow: #E9B824;
+}
 
+*{
+    font-family: 'Nanum Myeongjo', serif;
+}
 body {
     background-color: #B6CECA;
 }
 
 /*Header styles*/
 header {
-    height: 200px;
+    height: 50px;
     width: 100vw;
-    background-color: #8AB9AD;
+    background-color: var(--darkGreen);
     display: flex;
-
     border-bottom: 4px solid black;
     justify-content: flex-end;
     align-items: center;
@@ -20,23 +30,47 @@ header ul li {
     text-decoration: none;
     margin: 20px;
     font-size: 30px;
-    padding: 20px 20px;
+    padding: 60px 20px 20px 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
 }
 
 nav li:hover{
-    background-color: #4F6F52;
-    border-radius: 20px;
+    padding-top: 100px;
     font-weight: bold;
 }
 
 header ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Roboto', sans-serif;
+}
+
+#menu img{
+    width: 100px;
+    height: 100px;
+    display: none;
 }
 
 /*Icon design */
 
+.myIcon {
+    height: 220px;
+    width: 176px;
+    border: 10px solid white;
+    border-bottom: 56px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 30px -30px #739072 inset, -30px 30px #4F6F52 inset, 10px 10px 10px black;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: #95ac8c;
+}
+/*
 .myIcon {
     height: 110px;
     width: 88px;
@@ -53,6 +87,7 @@ header ul li a {
     top: 20px;
     background-color: #95ac8c;
 }
+*/
 
 .myIcon h1 {
     font-family: 'Bebas Neue', sans-serif;
@@ -96,6 +131,9 @@ header ul li a {
     flex-direction: column;
     align-items: center;
 }
+#about-me div{
+    width: 80vw;
+}
 
 #about-me h2 {
     font-size: 50px;
@@ -108,11 +146,12 @@ header ul li a {
 
 #about-me p {
     margin: 20px;
+    font-size: 20px;
 }
 
 /*Work gallery styling*/
 #work {
-    background-color: #2B574F;
+    background-color: var(--darkGreen);
     width: 100vw;
     height: 150vh;
     display: flex;
@@ -129,19 +168,31 @@ header ul li a {
 }
 
 #workGrid {
-    display: grid;
-    grid-template-columns: 30vw 30vw;
-    grid-template-rows: 40vh 40vh 40vh;
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     top: 20vh;
-    width: 60vw;
+    width: 65vw;
 }
 
-#workGrid article {
-    background-color: #8AB9AD;
+#bannerTile {
+    flex: 0 0 100%;
+    height: 400px;
+    margin-bottom: 5%;
+}
+
+#workGrid article{
+    background-color: var(--midGreen);
     border-radius: 20px;
-    border: 4px solid white;
+    border: 4px solid rgb(255, 255, 255);
     box-shadow: 10px 10px black;
+}
+
+.smallerTile{
+    flex: 0 0 48%;
+    height: 500px;
+    width: 30vw;
+    margin-bottom: 5%;
 }
 
 #workGrid article:hover {
@@ -149,9 +200,7 @@ header ul li a {
     cursor: grab;
 }
 
-#banner {
-    grid-area: 1 / 1 / 2 /3;
-}
+
 
 /* Individual application card styling */
 article{
@@ -166,7 +215,7 @@ article h3{
     align-self: flex-start;
     background-color: white;
     font-size: 150%;
-    box-shadow: 0px -10px #D83F31, 0px -20px #3876BF, 0px -30px #E9B824;
+    box-shadow: 0px -10px var(--htmlRed), 0px -20px var(--CSSBlue), 0px -30px var(--JSYellow);
 }
 .tech{
     margin: 10px;
@@ -188,14 +237,14 @@ article h3{
     background-repeat: no-repeat;
 }
 .html{
-    background-color: #D83F31;
+    background-color: var(--htmlRed);
 }
 .css{
-    background-color: #3876BF;
+    background-color: var(--CSSBlue);
 }
 
 .javascript{
-    background-color: #E9B824;
+    background-color: var(--JSYellow);
 }
 /*Contact section styling */
 #contact {
@@ -213,6 +262,10 @@ article h3{
     font-size: 50px;
     color: white;
     position: relative;
+}
+#contact h3{
+    font-size: 40px;
+    font-weight:100;
 }
 
 #contactArea{
@@ -254,14 +307,17 @@ article h3{
     header{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         height: 400px;
     }
     header ul{
-        display: flex;
+        
+        display: none;
         flex-direction: column;
     }
     .myIcon{
-        position:static;
+        float: none;
+        position: static;
     }
     .headshot{
         left: 50%;
@@ -270,5 +326,9 @@ article h3{
     #workGrid{
         display: flex;
         flex-direction: column;
+    }
+    #menu img{
+        display: block;
+        flex: 0 0 50%;
     }
 }

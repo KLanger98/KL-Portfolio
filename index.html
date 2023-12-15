@@ -7,9 +7,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./Assests/reset.css">
     <link rel="stylesheet" href="./Assests/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Myeongjo:wght@700&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+
 
 </head>
 
@@ -18,11 +21,14 @@
         <div class="myIcon">
             <h1>KL</h1>
         </div>
+        <div id="menu">
+            <img src="./Assests/Icons/tool.png">
+        </div>
         <nav>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="nav1"><a href="#about-me">About Me</a></li>
+                <li id="nav2"><a href="#work">Work</a></li>
+                <li id="nav3"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,28 +41,25 @@
         <div>
             <h2>About Me.</h2>
             <p>Hello, My name is Karl Langer.</p>
-            <p>I am currently studying to be a FullStack Web Developer with the help of the Adelaide University Web Development Bootcamp</p>
+            <p>I am a (soon to be) Fullstack Developer based in Adelaide, Australia. I am currently completing the Adelaide University Web Development Bootcamp and have been teaching myself to code over the last year and a half as a hobby.</p>
             <br>
-            <p>I have skills in the following languages</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-            </ul>
+            <p>In my own time I enjoy travelling, photography, bouldering and hiking. I am currently looking to make the shift from working in the health care setting as a Physiotherapist into the world of technology with keen personal interest in understanding the links between software and health care.</p>
+            <br>
+            <p>My current expertise lies in FrontEnd languages and Javascript with a keen interest to explore the backend. </p>
             
         </div>
     </section>
     <section id="work">
         <h2>My Work.</h2>
         <div id="workGrid">
-            <article id="banner">
+            <article id="bannerTile">
                 <h3>My Project Name</h3>
                 <ul class="techContainer">
                     <li class="tech">CSS</li>
                     <li class="tech">HTML</li>
                 </ul>
             </article>
-            <article id="battleship">
+            <article id="battleship" class="smallerTile">
                 <h3>Battleship</h3>
                 <ul class="techContainer">
                     <li class="tech css">CSS</li>
@@ -64,21 +67,21 @@
                     <li class="tech javascript">Javascript</li>
                 </ul>
             </article>
-            <article>
+            <article class="smallerTile">
                 <h3>My Project Name</h3>
                 <ul class="techContainer">
                     <li class="tech">CSS</li>
                     <li class="tech">HTML</li>
                 </ul>
             </article>
-            <article>
+            <article class="smallerTile">
                 <h3>My Project Name</h3>
                 <ul class="techContainer">
                     <li class="tech">CSS</li>
                     <li class="tech">HTML</li>
                 </ul>
             </article>
-            <article>
+            <article class="smallerTile">
                 <h3>My Project Name</h3>
                 <ul class="techContainer">
                     <li class="tech">CSS</li>
@@ -90,6 +93,7 @@
     </section>
     <section id="contact">
         <h2>Contact.</h2>
+        <h3>Find Me Here</h3>
         <div id="contactArea">
             <a href="https://github.com/KLanger98?tab=repositories">
                 <div id="gitHub">
@@ -98,11 +102,13 @@
                 <!--Need to attribute https://www.flaticon.com/free-icon/logo_12868194?term=github&page=1&position=12&origin=search&related_id=12868194-->
                 </div>
             </a>
+            <a href="mailto:karl.w.langer@gmail.com">
             <div id="email">
                 <img class="email" src="./Assests/Icons/letter.png">
                 <img class="emailAlt" src="./Assests/Icons/letter (1).png">
             </div>
-            <a href="https://www.linkedin.com/">
+            </a>
+            <a href="https://www.linkedin.com/in/karl-langer-97b4a92a4//">
                 <div id="linkedIn" onclick="google.com">
                     <img class="linkedIn" src="./Assests/Icons/LinkedIN.png">
                     <img class="linkedInAlt" src="./Assests/Icons/LinkedInAlt.png">
