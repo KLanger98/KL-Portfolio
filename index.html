@@ -19,22 +19,27 @@
 <body>
     <header>
         <div class="myIcon">
-            <h1>KL</h1>
-        </div>
-        <div id="menu">
-            <img src="./Assests/Icons/tool.png">
+            <div id="iconDesign">
+                <h1 id="initial">KL</h1>
+                <h1 id="alt">Karl Langer</h1>
+            </div>
+            <ul id="mobileNav">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
         <nav>
-            <ul>
-                <li id="nav1"><a href="#about-me">About Me</a></li>
-                <li id="nav2"><a href="#work">Work</a></li>
-                <li id="nav3"><a href="#contact">Contact</a></li>
+            <ul id="webNav">
+                <a href="#about-me"><li>About Me</li></a>
+                <a href="#work"><li>Work</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
     <div class="hero-div">
         <img class="hero" src="./Assests/Images/2166F7DD-955D-4620-98EE-9A1EABF139C1-2415-0000022164D998B3.jpg">
-        <img class="headshot" src="./Assests/Images/88A5F1A0-FFFE-4AAF-B5D0-92CF77BBE9DF-2263-00000155E42F2484.jpg">
+        <img class="headshot" src="./Assests/Images/B3DCECED-1306-486A-91CA-A8B7ECCF868F_1_105_c.jpeg">
     </div>
 
     <section id="about-me">
@@ -42,9 +47,7 @@
             <h2>About Me.</h2>
             <p>Hello, My name is Karl Langer.</p>
             <p>I am a (soon to be) Fullstack Developer based in Adelaide, Australia. I am currently completing the Adelaide University Web Development Bootcamp and have been teaching myself to code over the last year and a half as a hobby.</p>
-            <br>
             <p>In my own time I enjoy travelling, photography, bouldering and hiking. I am currently looking to make the shift from working in the health care setting as a Physiotherapist into the world of technology with keen personal interest in understanding the links between software and health care.</p>
-            <br>
             <p>My current expertise lies in FrontEnd languages and Javascript with a keen interest to explore the backend. </p>
             
         </div>
@@ -52,11 +55,12 @@
     <section id="work">
         <h2>My Work.</h2>
         <div id="workGrid">
-            <article id="bannerTile">
-                <h3>My Project Name</h3>
+            
+            <article id="bannerTile" onclick="window.location.href='https://klanger98.github.io/webpage-practice/'">
+                <h3>Website Practice</h3>
                 <ul class="techContainer">
-                    <li class="tech">CSS</li>
-                    <li class="tech">HTML</li>
+                    <li class="tech css">CSS</li>
+                    <li class="tech html">HTML</li>
                 </ul>
             </article>
             <article id="battleship" class="smallerTile">
@@ -67,25 +71,27 @@
                     <li class="tech javascript">Javascript</li>
                 </ul>
             </article>
+            <article id="calculator" class="smallerTile">
+                <h3>Calculator</h3>
+                <ul class="techContainer">
+                    <li class="tech css">CSS</li>
+                    <li class="tech html">HTML</li>
+                    <li class="tech javascript">Javascript</li>
+                </ul>
+            </article>
             <article class="smallerTile">
-                <h3>My Project Name</h3>
+                <h3>API test</h3>
                 <ul class="techContainer">
                     <li class="tech">CSS</li>
                     <li class="tech">HTML</li>
                 </ul>
             </article>
-            <article class="smallerTile">
-                <h3>My Project Name</h3>
+            <article id="etchasketch"class="smallerTile">
+                <h3>Etch-A-Sketch</h3>
                 <ul class="techContainer">
-                    <li class="tech">CSS</li>
-                    <li class="tech">HTML</li>
-                </ul>
-            </article>
-            <article class="smallerTile">
-                <h3>My Project Name</h3>
-                <ul class="techContainer">
-                    <li class="tech">CSS</li>
-                    <li class="tech">JavaScript</li>
+                    <li class="tech css">CSS</li>
+                    <li class="tech html">HTML</li>
+                    <li class="tech javascript">Javascript</li>
                 </ul>
             </article>
         </div>
