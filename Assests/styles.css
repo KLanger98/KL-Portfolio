@@ -126,23 +126,19 @@ header a{
 #about-me {
     display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #about-me div{
-    width: 80vw;
+    margin: 200px 15vw;
 }
 
 #about-me h2 {
     font-size: 50px;
 }
 
-#about-me div {
-    position: relative;
-    top: 30%;
-}
 
 #about-me p {
     margin: 20px;
@@ -329,7 +325,7 @@ article h3{
 }
 
 
-/*Media Query for viewport widths below 768px */
+/*Media Query for viewport widths below 880px */
 @media screen and (max-width: 880px){
     header{
         height: 400px;
@@ -338,9 +334,9 @@ article h3{
     }
     .myIcon{
         width: 300px;
-        height: 600px;
+        height: 500px;
         position: relative;
-        top: 150px;
+        top: 80px;
         left: 0px;
         display: flex;
         flex-direction: column;
@@ -366,11 +362,19 @@ article h3{
         font-size: 30px;
         background-color: white;
         border: none;
-
+    }
+    .myIcon a{
+        padding: 20px auto;
+    }
+    .myIcon a:hover{
+        background-color: rgb(192, 186, 186);
+    }
+    #about-me{
+        height: 80vh;
     }
 
     #work{
-        height: 200vh;
+        height: 250vh;
     }
 
     #alt{
@@ -389,6 +393,7 @@ article h3{
     }
     #bannerTile{
         flex: 0 0 100%;
+        height: 40vh;
 
     }
     .smallerTile{
@@ -400,4 +405,44 @@ article h3{
         display: block;
         flex: 0 0 50%;
     }
+}
+
+@media screen and (max-width: 664px){
+    #about-me{
+        height: 180vh
+    }
+
+    .headshot {
+        border-radius: 100%;
+        width: 10em;
+        height: 10em;
+        position: relative;
+        bottom: 100px;
+        margin: 0 auto;
+        box-shadow: 10px 10px #3A4D39;
+    }
+
+    #work{
+        height: 240vh;
+    }
+
+
+        #bannerTile {
+            flex: 0 0 100%;
+            height: 40vh;
+    
+        }
+    
+        .smallerTile {
+            flex: 0 0 100%;
+            height: 40vh;
+        }
+#contact h3 {
+    font-size: 20px;
+}
+
+        #contactArea img {
+            width: 40px;
+            height: 40px;
+        }
 }

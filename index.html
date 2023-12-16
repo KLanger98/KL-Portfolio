@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>KL - Portfolio</title>
     <link rel="stylesheet" href="./Assests/reset.css">
     <link rel="stylesheet" href="./Assests/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Myeongjo:wght@700&family=Roboto:wght@100&display=swap"
     rel="stylesheet">
 
 
 </head>
-
 <body>
+    <!--Header containing a logo and navigation bar along with alternative navgiation bar for smaller screens-->
     <header>
         <div class="myIcon">
             <div id="iconDesign">
@@ -37,11 +37,12 @@
             </ul>
         </nav>
     </header>
+    <!--Hero div to insert the banner image at the top of the page and juxtapose a headshot on top of that-->
     <div class="hero-div">
-        <img class="hero" src="./Assests/Images/2166F7DD-955D-4620-98EE-9A1EABF139C1-2415-0000022164D998B3.jpg">
-        <img class="headshot" src="./Assests/Images/B3DCECED-1306-486A-91CA-A8B7ECCF868F_1_105_c.jpeg">
+        <img class="hero" src="./Assests/Images/2166F7DD-955D-4620-98EE-9A1EABF139C1-2415-0000022164D998B3.jpg" alt="A wide shot of the Austrian alps looking at two large peaks, a person can be seen on one from a distance">
+        <img class="headshot" src="./Assests/Images/B3DCECED-1306-486A-91CA-A8B7ECCF868F_1_105_c.jpeg" alr="A photo of myself">
     </div>
-
+    <!--About me section including a description about myself, my hobbies and expertise-->
     <section id="about-me">
         <div>
             <h2>About Me.</h2>
@@ -49,13 +50,12 @@
             <p>I am a (soon to be) Fullstack Developer based in Adelaide, Australia. I am currently completing the Adelaide University Web Development Bootcamp and have been teaching myself to code over the last year and a half as a hobby.</p>
             <p>In my own time I enjoy travelling, photography, bouldering and hiking. I am currently looking to make the shift from working in the health care setting as a Physiotherapist into the world of technology with keen personal interest in understanding the links between software and health care.</p>
             <p>My current expertise lies in FrontEnd languages and Javascript with a keen interest to explore the backend. </p>
-            
         </div>
     </section>
+    <!--Section dedicated to showcase projects in a tile grid format-->
     <section id="work">
         <h2>My Work.</h2>
         <div id="workGrid">
-            
             <article id="bannerTile" onclick="window.location.href='https://klanger98.github.io/webpage-practice/'">
                 <h3>Website Practice</h3>
                 <ul class="techContainer">
@@ -95,33 +95,39 @@
                 </ul>
             </article>
         </div>
-
     </section>
+    <!--Section with interactive icons that link to my gitHub, LinkedIn and my email address-->
     <section id="contact">
         <h2>Contact.</h2>
         <h3>Find Me Here</h3>
         <div id="contactArea">
             <a href="https://github.com/KLanger98?tab=repositories">
                 <div id="gitHub">
-                    <img class="gitHub" src="./Assests/Icons/GitHub.png">
-                    <img class="gitHubAlt" src="./Assests/Icons/gitHubAlt.png">
+                    <img class="gitHub" src="./Assests/Icons/GitHub.png" alt="gitHub logo">
+                    <img class="gitHubAlt" src="./Assests/Icons/gitHubAlt.png" "gitHub logo">
                 <!--Need to attribute https://www.flaticon.com/free-icon/logo_12868194?term=github&page=1&position=12&origin=search&related_id=12868194-->
                 </div>
             </a>
             <a href="mailto:karl.w.langer@gmail.com">
             <div id="email">
-                <img class="email" src="./Assests/Icons/letter.png">
-                <img class="emailAlt" src="./Assests/Icons/letter (1).png">
+                <img class="email" src="./Assests/Icons/letter.png" alt="Email logo">
+                <img class="emailAlt" src="./Assests/Icons/letter (1).png" alt="Email logo">
             </div>
             </a>
             <a href="https://www.linkedin.com/in/karl-langer-97b4a92a4//">
                 <div id="linkedIn" onclick="google.com">
-                    <img class="linkedIn" src="./Assests/Icons/LinkedIN.png">
-                    <img class="linkedInAlt" src="./Assests/Icons/LinkedInAlt.png">
+                    <img class="linkedIn" src="./Assests/Icons/LinkedIN.png" alt="linkedIn logo">
+                    <img class="linkedInAlt" src="./Assests/Icons/LinkedInAlt.png" alt="linkedIn logo">
                 </div>
             </a>
         </div>
-    <footer></footer>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Kalashnyk -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Kalashnyk -
+            Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Kalashnyk - Flaticon</a>
+    </footer>
 </body>
 
 </html>
