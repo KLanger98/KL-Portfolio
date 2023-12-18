@@ -2,13 +2,13 @@
 
 ## Description
 
+Access: https://klanger98.github.io/KL-Portfolio/
+
 This portfolio has been created to provide information about myself, insight into projects I have created and contributed to along with details and links to contact me. This portfolio is also a demonstration of my CSS and HTML expertise.
 
-When creating this portfolio I really wanted it to reflect who I am and my interests. So first things first I took advantage of all three of the hobbies I have been absorbed by in the last year: photography, hiking and travelling. To do this I built the top of my webpage around a photo I took while hiking through Austria with my girlfriend and friend (who can be seen if you look close enough). I then wanted to make the website personal by adding an image of me and a logo. When viewing this page on larger screens the logo has been designed to resemble a similar dimensions to a fujifilm instax polaroid, another camera I enjoy using around friends. The rest of the webpage I tried to keep as simple as possible with clean organisation and some interesting interactive features.
+When creating this portfolio I really wanted it to reflect who I am and my interests. So first things first I took advantage of all three of the hobbies I have been absorbed by in the last year: photography, hiking and travelling. To do this I built the top of my webpage around a photo I took while hiking through Austria with my girlfriend and friend (who can be seen if you look close enough). I then wanted to make the website personal by adding an image of me and a logo. When viewing this page on larger screens the logo has been designed to resemble a similar dimensions to a Fujifilm instax polaroid with my initials nested inside. The rest of the webpage I tried to keep as simple as possible with clean organisation and some interesting interactive features to improve user experience.
 
 While making this portfolio I learnt valuable skills in managing media queries in order to make a responsive website. I spent a long time really trying to understand how my website will appear on wider screens versus smaller screens such as phones and adjusted sizes and functionality as appropriate. I also learnt some interesting techniques using the CSS animation, transition and hover features which I incorporated into all of my interactive components of the webpage. My understanding of flexbox as a concept improved considerable with this project thanks to the varied positioning scenarios used with this website.
-
-My portfolio can be viewed here: https://klanger98.github.io/KL-Portfolio/
 
 ## Table of Contents (Optional)
 
@@ -18,7 +18,7 @@ My portfolio can be viewed here: https://klanger98.github.io/KL-Portfolio/
 
 ## Usage
 
-To use this website follow the provided link (https://klanger98.github.io/KL-Portfolio/). Use the nevigation bar located towards the top of the document to direct you to the 'About', 'Work' or 'Contact' section.
+To use this website follow the provided link (https://klanger98.github.io/KL-Portfolio/). Use the navigation bar located towards the top of the document to direct you to the 'About', 'Work' or 'Contact' section.
 
 ![Screenshot of website header](./Assests/Images/screenshots/Screenshot%202023-12-17%20at%206.11.26 pm.png "Website Header")
 
