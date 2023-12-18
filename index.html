@@ -12,16 +12,14 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Myeongjo:wght@700&family=Roboto:wght@100&display=swap"
     rel="stylesheet">
-
-
 </head>
 <body>
     <!--Header containing a logo and navigation bar along with alternative navgiation bar for smaller screens-->
     <header>
         <div class="myIcon">
             <div id="iconDesign">
-                <h1 id="initial">KL</h1>
-                <h1 id="alt">Karl Langer</h1>
+                <h1 id="webText">KL</h1>
+                <h1 id="altText">Karl Langer</h1>
             </div>
             <ul id="mobileNav">
                 <li><a href="#about-me">About</a></li>
@@ -56,44 +54,45 @@
     <section id="work">
         <h2>My Work.</h2>
         <div id="workGrid">
-            <article id="bannerTile" onclick="window.location.href='https://klanger98.github.io/webpage-practice/'">
-                <h3>Website Practice</h3>
+            <div class="tile" id="bannerTile" onclick="window.location.href='https://klanger98.github.io/webpage-practice/'">
+                <h3>Contact Page</h3>
                 <ul class="techContainer">
                     <li class="tech css">CSS</li>
                     <li class="tech html">HTML</li>
                 </ul>
-            </article>
-            <article id="battleship" class="smallerTile">
+            </div>
+            <div id="battleship" class="smallerTile tile">
                 <h3>Battleship</h3>
                 <ul class="techContainer">
                     <li class="tech css">CSS</li>
                     <li class="tech html">HTML</li>
                     <li class="tech javascript">Javascript</li>
                 </ul>
-            </article>
-            <article id="calculator" class="smallerTile">
+            </div>
+            <div id="calculator" class="smallerTile tile">
                 <h3>Calculator</h3>
                 <ul class="techContainer">
                     <li class="tech css">CSS</li>
                     <li class="tech html">HTML</li>
                     <li class="tech javascript">Javascript</li>
                 </ul>
-            </article>
-            <article class="smallerTile">
-                <h3>API test</h3>
+            </div>
+            <div id="connectFour" class="smallerTile tile">
+                <h3>Connect Four</h3>
                 <ul class="techContainer">
-                    <li class="tech">CSS</li>
-                    <li class="tech">HTML</li>
+                    <li class="tech css">CSS</li>
+                    <li class="tech html">HTML</li>
+                    <li class="tech javascript">Javascript</li>
                 </ul>
-            </article>
-            <article id="etchasketch"class="smallerTile">
+            </div>
+            <div id="etchasketch"class="smallerTile tile">
                 <h3>Etch-A-Sketch</h3>
                 <ul class="techContainer">
                     <li class="tech css">CSS</li>
                     <li class="tech html">HTML</li>
                     <li class="tech javascript">Javascript</li>
                 </ul>
-            </article>
+            </div>
         </div>
     </section>
     <!--Section with interactive icons that link to my gitHub, LinkedIn and my email address-->
@@ -104,7 +103,7 @@
             <a href="https://github.com/KLanger98?tab=repositories">
                 <div id="gitHub">
                     <img class="gitHub" src="./Assests/Icons/GitHub.png" alt="gitHub logo">
-                    <img class="gitHubAlt" src="./Assests/Icons/gitHubAlt.png" "gitHub logo">
+                    <img class="gitHubAlt" src="./Assests/Icons/gitHubAlt.png" alt="gitHub logo">
                 <!--Need to attribute https://www.flaticon.com/free-icon/logo_12868194?term=github&page=1&position=12&origin=search&related_id=12868194-->
                 </div>
             </a>
@@ -121,13 +120,6 @@
                 </div>
             </a>
         </div>
-    <footer>
-        <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Kalashnyk -
-            Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Kalashnyk -
-            Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Kalashnyk - Flaticon</a>
-    </footer>
 </body>
 
 </html>

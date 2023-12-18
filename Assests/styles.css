@@ -1,17 +1,23 @@
+/*root containing all variable references */
 :root{
+    /* Colors */
     --lightGreen: #B6CECA;
     --darkGreen: #2B574F;
     --midGreen: #8AB9AD;
     --htmlRed: #D83F31;
     --CSSBlue: #3876BF;
     --JSYellow: #E9B824;
+    
 }
 
 *{
     font-family: 'Nanum Myeongjo', serif;
 }
-body {
-    background-color: #B6CECA;
+h2{
+    font-size: 300%;
+}
+h3{
+    font-size: 250%;
 }
 
 /*Header styles*/
@@ -26,32 +32,29 @@ header {
 nav ul{
     position: absolute;
     height: 400px;
-    margin: 0px;
     top: -40px;
-    right: 20px;
+    right: 40px;
     display: flex;
 }
 
-nav ul li {
+nav li {
     height: 150px;
     width: auto;
     margin: 0 20px;
-    font-size: 30px;
+    font-size: 200%;
     padding: 80px 20px 20px 20px;
     background-color: white;
     border-radius: 0 0 10px 10px;
     box-shadow: 10px 10px 10px black;
-
 }
 
-nav ul li:hover{
+nav li:hover{
     padding: 100px 20px;
     transition: padding .2s;
 }
-nav ul li:active{
+nav li:active{
     transform: translateY(4px) translateX(4px);
     box-shadow: 7px 7px 10px black;
-    
 }
 
 header a{
@@ -62,13 +65,19 @@ header a{
 
 
 /*Icon design */
-
 .myIcon {
     box-shadow:  10px 10px 10px black;
     position: absolute;
     left: 100px;
     top: 0px;
     border: 10px solid white;
+}
+
+.myIcon h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: white;
+
 }
 
 #iconDesign{
@@ -82,18 +91,11 @@ header a{
     border-bottom: 56px solid white;
 }
 
-#alt{
+#altText{
     display: none;
 }
 #mobileNav{
     display: none;
-}
-
-.myIcon h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 50px;
-    color: white;
-
 }
 
 /*hero styling */
@@ -106,7 +108,7 @@ header a{
 
 .hero-div {
     height: 50vh;
-    border-bottom: 4px solid black;
+    border-bottom: 8px solid black;
 }
 
 .headshot {
@@ -116,40 +118,35 @@ header a{
     object-fit: cover;
     border: 0.5em solid white;
     position: relative;
-    z-index: 1;
     bottom: 200px;
     left: 100px;
-    box-shadow: 10px 10px #3A4D39;
+    box-shadow: 10px 10px 10px black;
 }
 
 /*About me section styling*/
 #about-me {
     display: flex;
-    width: 100vw;
-    height: 60vh;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    background-color: var(--lightGreen);
 }
 #about-me div{
     margin: 200px 15vw;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
-
-#about-me h2 {
-    font-size: 50px;
-}
-
 
 #about-me p {
     margin: 20px;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 /*Work gallery styling*/
 #work {
     background-color: var(--darkGreen);
     width: 100vw;
-    height: 180vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,19 +155,20 @@ header a{
 }
 
 #work h2 {
-    font-size: 50px;
     color: white;
     margin: 40px;
 }
 
 #workGrid {
     display: flex;
+    height: 100%;
+    box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-between;
-    top: 20vh;
     width: 65vw;
+    padding: 20px;
 }
-
+/*Individual tile styling*/
 #bannerTile {
     flex: 0 0 100%;
     height: 60vh;
@@ -181,11 +179,15 @@ header a{
     background-repeat: no-repeat;
 }
 
-#workGrid article{
+.tile{
     background-color: var(--midGreen);
     border-radius: 20px;
     border: 8px solid rgb(255, 255, 255);
     box-shadow: 10px 10px rgb(29, 29, 29);
+}
+.tile h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
 }
 
 .smallerTile{
@@ -195,39 +197,34 @@ header a{
     margin-bottom: 5%;
 }
 
-#workGrid article:hover {
-    border: 8px solid white;
+.tile:hover {
+    border: 12px solid rgb(29, 38, 29);
     cursor: grab;
 }
-#workGrid article:active{
+.tile:active{
     transform: translateY(4px) translateX(4px);
     box-shadow: 7px 7px black;
 }
 
-
-
 /* Individual application card styling */
-article{
+.tile{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-article h3{
+.tile h3{
     margin: 60px 20px 20px 0;
     padding: 20px 20px 20px 40px;
     border-radius:  0 10px 10px 0;
     align-self: flex-start;
     background-color: white;
-    font-size: 150%;
     box-shadow: 0px -10px var(--htmlRed), 0px -20px var(--CSSBlue), 0px -30px var(--JSYellow);
 }
 .tech{
     margin: 10px;
     padding: 10px;
-    border-radius: 20px;
-    background-color: white;
-    font-size: 150%;
-    border: 2px solid white;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .techContainer{
@@ -235,42 +232,43 @@ article h3{
     flex-wrap:wrap;
 }
 
+.html {
+    background-color: var(--htmlRed);
+}
+
+.css {
+    background-color: var(--CSSBlue);
+}
+
+.javascript {
+    background-color: var(--JSYellow);
+}
+
+/*Images for tile backgrounds + styling */
 #battleship{
-    position: relative;
-    background-color: rgba(159, 119, 119, 0.5);
     background: url('./Images/projectImages/battleship.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #calculator{
     background: url('./Images/projectImages/calculator.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #etchasketch{
     background: url('./Images/projectImages/Etch-A-Sketch.jpg');
+    
+}
+
+#connectFour{
+    background: url('./Images/projectImages/connect4.jpeg');
+}
+#calculator, #etchasketch, #battleship, #connectFour{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.html{
-    background-color: var(--htmlRed);
-}
-.css{
-    background-color: var(--CSSBlue);
-}
-
-.javascript{
-    background-color: var(--JSYellow);
-}
 /*Contact section styling */
 #contact {
     background-color: #B6CECA;
-    height: 40vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -280,23 +278,22 @@ article h3{
 
 #contact h2 {
     margin: 20px;
-    font-size: 50px;
     color: white;
-    position: relative;
 }
 #contact h3{
-    font-size: 40px;
     font-weight:100;
     position: relative;
     top: 5vh;
+    margin: 20px;
 }
 
 #contactArea{
     display: flex;
+    margin-top: 30px;
 }
 
 #contactArea div{
-    margin: 30px;
+    margin: 50px 30px 100px 30px;
 }
 
 #contactArea img{
@@ -369,24 +366,16 @@ article h3{
     .myIcon a:hover{
         background-color: rgb(192, 186, 186);
     }
-    #about-me{
-        height: 80vh;
-    }
 
-    #work{
-        height: 250vh;
-    }
-
-    #alt{
+    #altText{
         display: block;
     }
-    #initial{
+    #webText{
         display: none;
     }
     #webNav{
         display: none;
     }
-
     .headshot{
         left: 50%;
         margin-left: -10em;
@@ -406,43 +395,61 @@ article h3{
         flex: 0 0 50%;
     }
 }
-
+/*Media query for widths below 664px*/
 @media screen and (max-width: 664px){
-    #about-me{
-        height: 180vh
+    #about-me p{
+        font-size: 100%;
+    }
+
+    #about-me div {
+        margin: 100px 10px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    h3{
+        font-size: 150%;
     }
 
     .headshot {
-        border-radius: 100%;
         width: 10em;
         height: 10em;
         position: relative;
         bottom: 100px;
-        margin: 0 auto;
-        box-shadow: 10px 10px #3A4D39;
-    }
-
-    #work{
-        height: 240vh;
-    }
-
-
-        #bannerTile {
-            flex: 0 0 100%;
-            height: 40vh;
-    
+        left: 50%;
+        margin-left: -5em;
         }
     
-        .smallerTile {
-            flex: 0 0 100%;
-            height: 40vh;
-        }
-#contact h3 {
-    font-size: 20px;
-}
+    .tile h3 {
+        margin: 40px 20px 20px 0;
+        padding: 20px 20px 20px 20px;
+        border-radius: 0 10px 10px 0;
+        background-color: white;
+        box-shadow: 0px -5px var(--htmlRed), 0px -10px var(--CSSBlue), 0px -15px var(--JSYellow);
+    }
+    
+    .tech {
+        padding: 5px;
+        font-size: 100%;
+    }
 
-        #contactArea img {
-            width: 40px;
-            height: 40px;
-        }
+    #workGrid{
+        width: 95vw;
+    }
+
+    #bannerTile {
+        flex: 0 0 100%;
+        height: 40vh;
+    }
+    
+    .smallerTile {
+        flex: 0 0 100%;
+        height: 30vh;
+    }
+
+    #contactArea img {
+        width: 40px;
+        height: 40px;
+    }
 }

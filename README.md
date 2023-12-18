@@ -19,40 +19,19 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 - [License](#license)
 
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use this website follow the provided link (https://klanger98.github.io/KL-Portfolio/). Use the nevigation bar located towards the top of the document to direct you to the 'About', 'Work' or 'Contact' section.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![Screenshot of website header](./Assests/Images/screenshots/Screenshot%202023-12-17%20at%206.11.26 pm.png "Website Header")
 
-![alt text](assets/images/screenshot.png)
+Within the 'Work' section interacting with the tiles will take you to projects that I have completed. The icons in the contact section can also be interacted with to access my Github, LinkedIn and Email.
 
 ## Credits
 
-
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+LinkedIn, Github and Email Icons sourced from:
+https://www.flaticon.com/authors/kalashnyk
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-
-
-## Features
-
-If your project has a lot of features, list them here.
-
-
+MIT license
