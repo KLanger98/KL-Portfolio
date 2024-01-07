@@ -171,7 +171,7 @@ header a{
     flex: 0 0 100%;
     height: 60vh;
     margin-bottom: 5%;
-    background: url(./Images/projectImages/website.png);
+    background: url(./Images/projectImages/battleship.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,14 +241,17 @@ header a{
 .javascript {
     background-color: var(--JSYellow);
 }
-
-/*Images for tile backgrounds + styling */
-#battleship{
-    background: url('./Images/projectImages/battleship.jpg');
+.react{
+    background-color: lightblue;
 }
 
-#calculator{
-    background: url('./Images/projectImages/calculator.jpg');
+/*Images for tile backgrounds + styling */
+#resume-generator{
+    background: url('./Images/projectImages/resume-generator.png');
+}
+
+#code-quiz{
+    background: url('./Images/projectImages/Coding-quiz.png');
 }
 
 #etchasketch{
@@ -259,7 +262,7 @@ header a{
 #connectFour{
     background: url('./Images/projectImages/connect4.jpeg');
 }
-#calculator, #etchasketch, #battleship, #connectFour{
+#resume-generator, #etchasketch, #code-quiz, #connectFour{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
